@@ -56,5 +56,5 @@ FROM pledges
 LEFT JOIN projects
 ON projects.id = pledges.project_id
 GROUP BY projects.category
-WHERE projects.category = 'books';"
+HAVING projects.category = 'books';"
 end
